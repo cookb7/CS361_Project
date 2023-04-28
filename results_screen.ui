@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>600</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="title">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>0</y>
+      <x>270</x>
+      <y>10</y>
       <width>71</width>
-      <height>81</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -33,70 +33,13 @@
      <string>Trails</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>80</y>
-      <width>91</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Rockwell Condensed</family>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Trail 1:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>80</y>
-      <width>351</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Rockwell Condensed</family>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Difficult, Length, Elevation Gain, Rating</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="home">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>0</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Rockwell Condensed</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Home</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="back">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>121</width>
-      <height>41</height>
+      <width>71</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -109,13 +52,134 @@
      <string>Back</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="review">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>80</y>
-      <width>121</width>
-      <height>41</height>
+      <x>10</x>
+      <y>750</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell Condensed</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Application by Brendan Cook</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="trailTable">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>481</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>false</bool>
+    </property>
+    <row>
+     <property name="text">
+      <string>New Trail</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Difficulty</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Length</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Elevation Gain</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Riden</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="home">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>71</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -125,7 +189,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Review</string>
+     <string>Home</string>
     </property>
    </widget>
   </widget>
