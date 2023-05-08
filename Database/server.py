@@ -8,11 +8,11 @@ import create_trails_database
 import sqlite3
 
 class REPSocket():
-    def __init__(self):
+    def __init__(self, connection = "tcp://*:5555"):
         self.context = zmq.Context()
         # Using REP and REQ socket pair
         self.socket = self.context.socket(zmq.REP)
-        self.socket.bind("tcp://*:5555")
+        self.socket.bind(connection)
 
 DBCONN = sqlite3.connect("trails.db")
 CURSOR = DBCONN.cursor()
@@ -21,8 +21,9 @@ SOCKET = REPSocket().socket
 def main():
     # Creates tables in trails.db if they do not already exist
     create_trails_database.create_tables()
-    while True:
-       receive_sql_request() 
+    flag = True
+    while flag:
+       flag = receive_sql_request() 
 
 def receive_sql_request(): 
     """
@@ -33,6 +34,7 @@ def receive_sql_request():
     print(f"Received query: {query}")
     # TODO: refactor out query logic 
     result = "Failure"
+
     match query[:6]:
         case "SELECT": 
             result = select_statement(query)
@@ -40,8 +42,12 @@ def receive_sql_request():
             result = delete_or_insert_statement(query)
         case "INSERT":
             result = delete_or_insert_statement(query)
+        case "q":
+            return False
+
     time.sleep(1)
     SOCKET.send_string(result)
+    return True
 
 def delete_or_insert_statement(query) -> str:
     """
