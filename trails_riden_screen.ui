@@ -52,7 +52,7 @@
      <string>Home</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="searchText">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -84,10 +84,10 @@
      </font>
     </property>
     <property name="text">
-     <string>Search trail to add to list</string>
+     <string>Add trail to list</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="searchButton">
+   <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -103,7 +103,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Search</string>
+     <string>Add</string>
     </property>
    </widget>
    <widget class="QListWidget" name="trailsRiden">
@@ -117,7 +117,57 @@
     </property>
     <item>
      <property name="text">
-      <string>New Trail</string>
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>20</pointsize>
+      </font>
      </property>
     </item>
    </widget>

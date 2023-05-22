@@ -58,16 +58,16 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>100</x>
       <y>100</y>
-      <width>231</width>
+      <width>401</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Rockwell Condensed</family>
-      <pointsize>12</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
@@ -93,7 +93,7 @@
      <string>Home</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="difficulty">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -120,7 +120,7 @@
     </item>
     <item>
      <property name="text">
-      <string>Difficult</string>
+      <string>Hard</string>
      </property>
     </item>
    </widget>
@@ -143,7 +143,7 @@
      <string>Difficulty:</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
+   <widget class="QComboBox" name="length">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -160,17 +160,17 @@
     </property>
     <item>
      <property name="text">
-      <string>5 - 10 Miles</string>
+      <string>0 - 5 Miles</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>11 -15 Miles</string>
+      <string>5  - 10 Miles</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>16 -20 Miles</string>
+      <string>10 - 20 Miles</string>
      </property>
     </item>
    </widget>
@@ -212,7 +212,7 @@
      <string>Elevation Gain:</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_3">
+   <widget class="QComboBox" name="elevation">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -234,12 +234,12 @@
     </item>
     <item>
      <property name="text">
-      <string>501 -1000  Feet</string>
+      <string>500 -1000  Feet</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>1001 - 1500 Feet</string>
+      <string>1000 - 1500 Feet</string>
      </property>
     </item>
    </widget>
